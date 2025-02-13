@@ -10,24 +10,23 @@
 module.exports = {
   siteMetadata: {
     title: `Gatsby Blog`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: ``,
+    author: `Mike Hunsicker`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
     contact: {
-      name: `DJ Larry Love`,
-      company: `LA Sound on Wheels`,
-      address: `1100 Marion Ave Apt 102 South Milwaukee WI 53172`
-    }
+      name: `Mike Hunsicker`,
+      company: `Blogs Inc.`,
+      address: `PO Box 1234`,
+    },
   },
   plugins: [
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: `2frc0c3erdra`,
-        accessToken: `SVCgSHlpTCT-3ieU2Th2kPYfojYj7PV7uhtJw1uQqPM`
-      }
+        spaceId: `ze0w921s1icg`,
+        accessToken: `bb1122b25d90173402833d33e7e05ab97574fb04c6935acf6e01283ff7467d77`,
+      },
     },
-
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
