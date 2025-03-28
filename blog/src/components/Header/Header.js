@@ -23,4 +23,4 @@ const Header = ({ siteTitle }) => (
   </StyledHeader>
 )
 
-export default Header
+export { Header }
