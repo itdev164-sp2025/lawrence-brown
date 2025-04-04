@@ -20,9 +20,11 @@ const StyledLink = styled(Link)`
 
 const Header = ({ siteTitle }) => (
   <StyledHeader>
-    <H1>
-      <StyledLink to="/">{siteTitle}</StyledLink>
-    </H1>
+    <StyledLink to="/">
+      <H1>
+        {siteTitle}
+      </H1>
+    </StyledLink>
   </StyledHeader>
 )
 
