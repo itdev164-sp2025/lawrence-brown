@@ -47,4 +47,4 @@ const variants = {
   }
 }
 
-export { theme as Gray }
+export const Gray = { ...theme, variants, images, icons }
