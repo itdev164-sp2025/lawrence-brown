@@ -5,7 +5,6 @@ import styled, { ThemeProvider } from "styled-components"
 import { Header } from "./Header"
 import "./layout.css"
 import { Gray } from "./themes/Gray"
-
 import { Main } from './Main'
 import { Footer } from './Footer'
 
@@ -14,7 +13,6 @@ const Content = styled.div`
   max-width: var(--size-content);
   padding: var(--size-gutter);
 `
-
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -28,10 +26,10 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <ThemeProvider theme={Gray}>
+    <ThemeProvider theme={Gray} >
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <Content>
-        <Main>{children}</Main>
+        <Main m={20}>{children}</Main>
         <Footer>
           © {new Date().getFullYear()} &middot; Built with
           {` `}
